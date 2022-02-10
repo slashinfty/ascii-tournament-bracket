@@ -1,0 +1,25 @@
+{
+  "name": "ascii-tournament-bracket",
+  "version": "1.0.0",
+  "description": "Generates an ASCII representation of an elimination tournament bracket",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slashinfty/ascii-tournament-bracket.git"
+  },
+  "keywords": [
+    "ascii",
+    "tournament",
+    "bracket"
+  ],
+  "author": "Matt Braddock",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/slashinfty/ascii-tournament-bracket/issues"
+  },
+  "homepage": "https://github.com/slashinfty/ascii-tournament-bracket#readme"
+}
