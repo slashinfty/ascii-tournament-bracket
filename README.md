@@ -34,14 +34,10 @@ console.log(asciiBracket(
 ```
 
 ## Usage
-The function may have any number (greater than 0) of arguments.
+The arguments of the function are arrays, each representing a round of the tournament. Each of the round arrays contain arrays, each representing a match. Each of the match arrays contain 0, 1, or 2 elements, each representing a player.
 
-Argument type: `[string|null?, string|null?][]`
+The function must have at least 1 argument (round). The length of each array must be equal to or half of the length of the previous argument.
 
-Each argument is an array (representing a single round) consisting of arrays (representing the individual matches). Each of the contained arrays (matches) can have 0, 1, or 2 elements (players).
+If a contained array (match) has 0 elements, then the match is not drawn in the bracket. If it has 1 element, then that player is in the top seat of the match with the bottom seat empty. If it has 2 elements, then the first player is in the top seat of the match and the second player is in the bottom seat.
 
-* If there are zero elements, the match does not exist in the bracket.
-* If there is one element, the element is in the top seat of the match, and the bottom seat is empty.
-* If there are two elements, the first element is in the top seat of the match, and the second element is in the bottom seat of the match.
-
-If either element is `null`, then the match is drawn, but the corresponding seat(s) is/are empty.
+If either player is `null`, then the match is drawn in the bracket, but no player will be listed in the corresponding seat.
